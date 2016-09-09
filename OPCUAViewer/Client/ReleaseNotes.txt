@@ -1,0 +1,127 @@
+#####################################################################
+# OPC UA Viewer release notes
+#
+# $LastChangedDate$
+# $Rev$
+# $LastChangedBy$
+# $URL$
+# $Id$ 
+#
+#####################################################################
+
+#####################################################################
+# OPC UA Viewer rel 1.00.12
+# 2011.05.19
+#####################################################################
+
+New version of OPC UA Viewer 1.00.10 is now available.
+This is only bugfix release. The main changes are listed below:
+- Resolved issue with license installation ("wrong hardware key");
+- Resolved issue with displaying information about license failure.
+
+Nowa wersja oprogramowania OPC UA Viewer 1.00.10 jest ju¿ dostêpna.
+Ten release zawiera tylko drobne poprawki. Do najwa¿niejszych zmian i nowoœci zaliczyæ mo¿na:
+- Rozwi¹zano problem z instalacj¹ licencji (i informacj¹ o z³ym kluczu sprzêtowym);
+- Rozwi¹zano problem z wyœwietlaniem informacji o problemie z licencj¹.
+
+
+This release includes:
+    * 4.00.02-CMCORE Bravo Kilo
+    * 2.0.108-NETAPI - Alpha Echo 
+    * 4.00.02-CLIB Bravo Lima
+    * 1.00.04-CRSC - Bravo Golf
+    * 3.10.02-OPCV - Bravo November
+    * 1.01.326.1-OPCF UA SDK 
+
+
+
+
+#####################################################################
+# OPC UA Viewer rel 1.00.10
+# 2010.04.04
+#####################################################################
+
+New version of OPC UA Viewer 1.00.10 is now available.
+- Improved licensing management.
+- Some minor bug fixes and improvements.
+
+Nowa wersja oprogramowania OPC UA Viewer 1.00.10 jest ju¿ dostêpna.
+- Ulepszono sposób zarz¹dzania licencjami w oprogramowaniu.
+- Drobne poprawki i ulepszenia
+
+Issues from ITR:
+UA-2569	Release OPCUAV 1.00.10
+UA-2349	Changes referenced to Licensing
+UA-2443	Implement software unlocking codes
+UA-2635	Enter unlock code window don't work when Alt+K is pressed.
+UA-2370	Modify setup to install content files in common Application Data
+UA-2448	Implement listener for License warning
+UA-2564	Add namespace in the AssemblyVersionInfo
+UA-2471	Split AboutForm and LicenseForm
+UA-2470	Add licensing to OPC UA Viewer
+UA-2435	Change location of OPC UA Viewer logs
+UA-2655 Add sample subscriptions file to the OPCUAV
+
+Libraries used in this release:
+    * 4.00.00-CMCORE Alpha Victor
+    * 2.0.108 - NETAPI - Alpha Echo 
+    * 3.70.06-DPP - Alpha Yankee
+    * 4.00.00-CLIB Alpha Whiskey
+    * 1.00.00-CRSC Alpha X-Ray   
+
+
+#####################################################################
+# OPC UA Viewer rel_1_00_00
+# 2010.08.31
+#####################################################################
+
+New OPC Unified Architecture client (CommServer software family) is finally released!
+
+CommServer OPC UA Viewer is a free OPC Unified Architecture (OPC UA) client. It allows integrators, developers, testers and all other users to easily connect to any OPC UA server, read data from the server, browse model structure according to references and much more! OPC UA Viewer is an ideal solution for automatic testing of connection with the OPC UA server using different communication protocols and using many different data transition security modes.
+ 
+FEATURES
+* Ability to connect to many servers at the same time.
+* Ability to connect to OPC UA server using either binary streams that use TCP channel or using Web Services and HTTP protocol. 
+* Support for many different data transfer security types, e.g. using encrypted or non-encrypted communication, certificates. 
+* Ability to automate testing of connecting to servers, that are working in the network. 
+* Browsing of the server address space structure according to different reference types.
+* Filtering of particular reference types in the Browse view.
+* Creating of the subscription to monitor the changes of values (support for different types of monitoring is avail-able).
+* Read and write of values from/to variables.
+* Easy storing and loading of communication sessions.
+
+
+Premiera klienta OPC Unified Architecture w rodzinie CommServer!
+
+Nowe oprogramowanie OPC UA Viewer w wersji 1.00 jest ju¿ dostêpne. OPC UA Viewer jest darmowym klientem OPC Unified Architecture (OPC UA). Jest on nowym cz³onkiem rodziny oprogramowania CommServer. Pozwala on integratorom, wdro¿eniowcom, testerom i wszystkim innym u¿ytkownikom na ³atwe po³¹czenie z dowolnym serwerem OPC UA, odczytywanie z niego danych, przegl¹danie struktury modelu wg referencji i wiele, wiele wiêcej! OPC UA Viewer jest idealnym narzêdziem do automatycznego testowania po³¹czenia z serwerami OPC UA z wykorzystaniem ró¿nych protoko³ów komunikacyjnych i przy u¿yciu ró¿nych typów zabezpieczeñ transmisji danych. 
+
+Wœród cech oprogramowania wyró¿niæ mo¿na:
+* Mo¿liwoœæ pod³¹czenia siê do wielu serwerów jednoczeœnie.
+* Mo¿liwoœæ pod³¹czenia do serwera OPC UA zarówno przy u¿yciu po³¹czenia opartego o strumieñ binarny wykorzystuj¹cy kana³ TCP jak i z wykorzystaniem Web-Serwisów i protoko³u HTTP.
+* Wsparcie dla ró¿nych typów zabezpieczeñ transmisji danych np. wykorzystanie komunikacji szyfrowanej lub nie szyfrowanej, certyfikatów.
+* Mo¿liwoœæ automatyzacji testowania pod³¹czenia do ró¿nych serwerów obecnych w sieci.
+* Przegl¹danie struktury przestrzeni adresowej serwera wg ró¿nego rodzaju referencji. 
+* Filtrowanie okreœlonych typów referencji wyœwietlanych w widoku Browse.
+* Tworzenie subskrypcji zmiennych w celu monitorowania zmian ich wartoœci (dostêpne wsparcie dla ró¿nych trybów monitorowania).
+* Odczyt i zapis wartoœci z/do zmiennych.
+* £atwe zapisywanie i odczytywanie sesji komunikacyjnych.
+
+
+
+UA-2128	Release 1.00.00
+UA-2064	Problem with keys
+UA-2119	Exclude handling of the toolbar buttons to separate methods
+UA-2062	Change namespaces
+UA-2123	Cleanup in OPCUAV solution libraries
+UA-2066	Igonre obj and bin folders
+UA-2065	Make OPCUAV similar to OPCV
+UA-2061	Change icons in the GUI
+UA-2118	Improve enabling icons in the toolbar after selecting a TreeNode
+UA-2122	Use tabPanel in main window of OPCUAV
+UA-2124	New icon and new filename / filetype for the session file
+UA-2125	Create new icon for OPC UA Viewer session
+UA-2060	Create OPCUAViewer folder and program structure
+UA-2110	Prepare insaller banner and logo for OPC UA Viewer
+UA-2120	Create product installer for OPCUAViewer
+UA-2126	OPCUAV - prepare scripts
+UA-2127	OPCUAV - svn properties and other cleanup

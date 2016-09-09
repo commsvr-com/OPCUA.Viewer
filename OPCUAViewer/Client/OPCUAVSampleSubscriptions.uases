@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ListOfSubscription xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+  <Subscription>
+    <DisplayName>FTX001_Output_Subscription</DisplayName>
+    <PublishingInterval>1000</PublishingInterval>
+    <KeepAliveCount>10</KeepAliveCount>
+    <LifetimeCount>1000</LifetimeCount>
+    <MaxNotificationsPerPublish>0</MaxNotificationsPerPublish>
+    <PublishingEnabled>true</PublishingEnabled>
+    <Priority>255</Priority>
+    <TimestampsToReturn>Both_2</TimestampsToReturn>
+    <MaxMessageCount>10</MaxMessageCount>
+    <DefaultItem>
+      <DisplayName>MonitoredItem</DisplayName>
+      <StartNodeId i:nil="true" />
+      <RelativePath i:nil="true" />
+      <NodeClass>Variable_2</NodeClass>
+      <AttributeId>13</AttributeId>
+      <IndexRange i:nil="true" />
+      <Encoding i:nil="true" />
+      <MonitoringMode>Reporting_2</MonitoringMode>
+      <SamplingInterval>-1</SamplingInterval>
+      <Filter i:nil="true" />
+      <QueueSize>0</QueueSize>
+      <DiscardOldest>true</DiscardOldest>
+    </DefaultItem>
+    <MinLifetimeInterval>10000</MinLifetimeInterval>
+    <MonitoredItems>
+      <MonitoredItem>
+        <DisplayName>Output</DisplayName>
+        <StartNodeId>
+          <Identifier>ns=2;i=1244</Identifier>
+        </StartNodeId>
+        <RelativePath i:nil="true" />
+        <NodeClass>Variable_2</NodeClass>
+        <AttributeId>13</AttributeId>
+        <IndexRange i:nil="true" />
+        <Encoding i:nil="true" />
+        <MonitoringMode>Reporting_2</MonitoringMode>
+        <SamplingInterval>-1</SamplingInterval>
+        <Filter i:nil="true" />
+        <QueueSize>0</QueueSize>
+        <DiscardOldest>true</DiscardOldest>
+      </MonitoredItem>
+    </MonitoredItems>
+    <DisableMonitoredItemCache>false</DisableMonitoredItemCache>
+  </Subscription>
+  <Subscription>
+    <DisplayName>FTX002_Output_Subscription</DisplayName>
+    <PublishingInterval>1000</PublishingInterval>
+    <KeepAliveCount>10</KeepAliveCount>
+    <LifetimeCount>1000</LifetimeCount>
+    <MaxNotificationsPerPublish>0</MaxNotificationsPerPublish>
+    <PublishingEnabled>true</PublishingEnabled>
+    <Priority>255</Priority>
+    <TimestampsToReturn>Both_2</TimestampsToReturn>
+    <MaxMessageCount>10</MaxMessageCount>
+    <DefaultItem>
+      <DisplayName>MonitoredItem</DisplayName>
+      <StartNodeId i:nil="true" />
+      <RelativePath i:nil="true" />
+      <NodeClass>Variable_2</NodeClass>
+      <AttributeId>13</AttributeId>
+      <IndexRange i:nil="true" />
+      <Encoding i:nil="true" />
+      <MonitoringMode>Reporting_2</MonitoringMode>
+      <SamplingInterval>-1</SamplingInterval>
+      <Filter i:nil="true" />
+      <QueueSize>0</QueueSize>
+      <DiscardOldest>true</DiscardOldest>
+    </DefaultItem>
+    <MinLifetimeInterval>10000</MinLifetimeInterval>
+    <MonitoredItems>
+      <MonitoredItem>
+        <DisplayName>Output</DisplayName>
+        <StartNodeId>
+          <Identifier>ns=2;i=1267</Identifier>
+        </StartNodeId>
+        <RelativePath i:nil="true" />
+        <NodeClass>Variable_2</NodeClass>
+        <AttributeId>13</AttributeId>
+        <IndexRange i:nil="true" />
+        <Encoding i:nil="true" />
+        <MonitoringMode>Reporting_2</MonitoringMode>
+        <SamplingInterval>-1</SamplingInterval>
+        <Filter i:nil="true" />
+        <QueueSize>0</QueueSize>
+        <DiscardOldest>true</DiscardOldest>
+      </MonitoredItem>
+    </MonitoredItems>
+    <DisableMonitoredItemCache>false</DisableMonitoredItemCache>
+  </Subscription>
+</ListOfSubscription>
