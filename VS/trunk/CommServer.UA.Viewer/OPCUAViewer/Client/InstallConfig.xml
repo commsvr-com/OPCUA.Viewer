@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<s0:InstalledApplication
+  xmlns:s0="http://opcfoundation.org/UA/SDK/Installation.xsd"
+  xmlns="http://opcfoundation.org/UA/SDK/Configuration.xsd"
+  xmlns:ua="http://opcfoundation.org/UA/2008/02/Types.xsd">
+
+  <Name>OPC UA Viewer</Name>
+  <ConfigurationFile>%CommonApplicationData%\CAS\Config\CAS.OPC.UA.Viewer.Config.xml</ConfigurationFile>
+  <!--<ConfigurationFile>CAS.OPC.UA.Viewer.Config.xml</ConfigurationFile>-->
+  <TrustedPeerStore>
+    <StoreType>Windows</StoreType>
+    <StorePath>LocalMachine\UA Applications</StorePath>
+  </TrustedPeerStore>
+  <s0:DeleteCertificatesOnUninstall>true</s0:DeleteCertificatesOnUninstall>
+  <s0:ConfigureFirewall>true</s0:ConfigureFirewall>
+  <s0:SetConfigurationFilePermisions>true</s0:SetConfigurationFilePermisions>
+  <s0:SetExecutableFilePermisions>true</s0:SetExecutableFilePermisions>
+  <s0:InstallAsService>false</s0:InstallAsService>
+  <s0:TraceConfiguration>
+    <OutputFilePath>%CommonApplicationData%\CAS\Logs\CAS.OPC.UA.Viewer.InstallLog.txt</OutputFilePath>
+    <DeleteOnLoad>true</DeleteOnLoad>
+    <TraceMasks>1023</TraceMasks>
+  </s0:TraceConfiguration>
+  
+</s0:InstalledApplication>
