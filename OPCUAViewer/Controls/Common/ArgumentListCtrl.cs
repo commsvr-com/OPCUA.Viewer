@@ -14,7 +14,6 @@
 //</summary>
 
 using System;
-using System.Reflection;
 using System.Windows.Forms;
 using CAS.OPC.UA.Viewer.Client.Controls;
 using Opc.Ua;
@@ -250,7 +249,7 @@ namespace CAS.OPC.UA.Viewer.Controls
             }
             catch (Exception exception)
             {
-				GuiUtils.HandleException(this.Text, MethodBase.GetCurrentMethod(), exception);
+				GuiUtils.HandleException(this.Text, System.Reflection.MethodBase.GetCurrentMethod(), exception);
             }
         }
 
@@ -271,7 +270,7 @@ namespace CAS.OPC.UA.Viewer.Controls
             }
             catch (Exception exception)
             {
-				GuiUtils.HandleException(this.Text, MethodBase.GetCurrentMethod(), exception);
+				GuiUtils.HandleException(this.Text, System.Reflection.MethodBase.GetCurrentMethod(), exception);
             }
         }
     }

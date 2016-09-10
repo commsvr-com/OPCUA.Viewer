@@ -25,8 +25,8 @@ namespace CAS.OPC.UA.Viewer.Client.Controls
     /// <summary>
     /// Displays a list of attributes and their values.
     /// </summary>
-    public partial class AttributeListCtrl : CAS.OPC.UA.Viewer.Client.Controls.BaseListCtrl
-    {
+    public partial class AttributeListCtrl : BaseListCtrl
+  {
         /// <summary>
         /// Initializes a new instance of the <see cref="AttributeListCtrl"/> class.
         /// </summary>

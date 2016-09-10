@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
@@ -9,7 +9,7 @@
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>CAS.OPC.UA.Viewer</RootNamespace>
-    <AssemblyName>CAS.OPC.UA.Viewer</AssemblyName>
+    <AssemblyName>CAS.CommServer.UA.Viewer.UserInterface</AssemblyName>
     <ApplicationIcon>opcuaviewer_48.ico</ApplicationIcon>
     <StartupObject>
     </StartupObject>
@@ -19,7 +19,7 @@
     <UpgradeBackupLocation>
     </UpgradeBackupLocation>
     <IsWebBootstrapper>true</IsWebBootstrapper>
-    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <SignAssembly>false</SignAssembly>
     <AssemblyOriginatorKeyFile>OPC Key Pair.snk</AssemblyOriginatorKeyFile>
     <PublishUrl>http://localhost/CAS.OPC.UA.Viewer/</PublishUrl>
@@ -48,6 +48,7 @@
     <WarningLevel>4</WarningLevel>
     <UseVSHostingProcess>false</UseVSHostingProcess>
     <PlatformTarget>AnyCPU</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -58,27 +59,24 @@
     <WarningLevel>4</WarningLevel>
     <UseVSHostingProcess>false</UseVSHostingProcess>
     <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="CAS.CodeProtect, Version=3.70.2.24644, Culture=neutral, PublicKeyToken=8832ff1a67ea61a3, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\CommonBinaries\PR36-CAS_MAIN_CORE_PCKG\CAS.CodeProtect.dll</HintPath>
+    <Reference Include="CAS.CodeProtect, Version=5.0.2.39087, Culture=neutral, PublicKeyToken=8832ff1a67ea61a3, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\CAS.CodeProtect.5.0.2\lib\net35\CAS.CodeProtect.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="Opc.Ua.Client, Version=1.1.318.1, Culture=neutral, PublicKeyToken=78aea80f6827b5ab, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\CommonBinaries\OPCFSDK.Binaries\Opc.Ua.Client.dll</HintPath>
+    <Reference Include="Interop.NetFwTypeLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=22186a540fc0b044, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Opc.Ua.Configuration.1.01.3262-Bravo\lib\net451\Interop.NetFwTypeLib.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>
-    <Reference Include="Opc.Ua.Configuration, Version=1.1.318.1, Culture=neutral, PublicKeyToken=78aea80f6827b5ab, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\CommonBinaries\OPCFSDK.Binaries\Opc.Ua.Configuration.dll</HintPath>
+    <Reference Include="Opc.Ua.Configuration, Version=1.1.326.0, Culture=neutral, PublicKeyToken=8832ff1a67ea61a3, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Opc.Ua.Configuration.1.01.3262-Bravo\lib\net451\Opc.Ua.Configuration.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="Opc.Ua.Core, Version=1.1.318.1, Culture=neutral, PublicKeyToken=78aea80f6827b5ab, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\CommonBinaries\OPCFSDK.Binaries\Opc.Ua.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="Opc.Ua.Server, Version=1.1.318.1, Culture=neutral, PublicKeyToken=78aea80f6827b5ab, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\CommonBinaries\OPCFSDK.Binaries\Opc.Ua.Server.dll</HintPath>
+    <Reference Include="Opc.Ua.Core, Version=1.1.326.0, Culture=neutral, PublicKeyToken=78aea80f6827b5ab, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\OPC.UA.SDK.Core.1.01.326\lib\net35\Opc.Ua.Core.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.configuration" />
@@ -95,15 +93,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="..\..\..\PR24-Biblioteka\CommonFiles\Licensing\ParentInstaller.cs">
-      <Link>ParentInstaller.cs</Link>
-      <SubType>Component</SubType>
-    </Compile>
     <Compile Include="OpcUaClientForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="OpcUaClientForm.Designer.cs">
       <DependentUpon>OpcUaClientForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ParentInstaller.cs">
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -121,10 +118,17 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="App.config" />
+    <EmbeddedResource Include="App.config">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Include="InstallConfig.xml" />
-    <None Include="CAS.OPC.UA.Viewer.Config.xml" />
-    <None Include="CAS.OPC.UA.Viewer.Endpoints.xml" />
+    <None Include="CAS.CommServer.UA.Viewer.UserInterface.Config.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="CAS.CommServer.UA.Viewer.UserInterface.Endpoints.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -195,7 +199,8 @@
   </Target>
   -->
   <PropertyGroup>
-    <PostBuildEvent>copy $(ProjectDir)\CAS.OPC.UA.Viewer.Config.xml $(TargetDir)</PostBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
     <PreBuildEvent>
     </PreBuildEvent>
   </PropertyGroup>

@@ -15,7 +15,7 @@
 
 using System;
 using System.Collections.Generic;
-using System.Reflection;
+//using System.Reflection;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Windows.Forms;
@@ -46,7 +46,7 @@ namespace CAS.OPC.UA.Viewer.Client.Controls
 		/// <summary>
 		/// Displays the details of an exception.
 		/// </summary>
-		public static void HandleException(string caption, MethodBase method, Exception e)
+		public static void HandleException(string caption, System.Reflection.MethodBase method, Exception e)
 		{
             if (String.IsNullOrEmpty(caption))
             {
