@@ -145,13 +145,13 @@
       <Project>{234A138E-4E17-4F12-84A3-A920DDAE0D86}</Project>
       <Name>LicensesContainer</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\Common\Controls\UAClientControls.csproj">
+    <ProjectReference Include="..\..\Common\Controls\Viewer.ClientControls.csproj">
       <Project>{A247D2EE-14FC-463D-A9BA-6CFF1EF22B7A}</Project>
-      <Name>UAClientControls</Name>
+      <Name>Viewer.ClientControls</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Controls\UAViewerControls.csproj">
+    <ProjectReference Include="..\Controls\Viewe.VieweControls.csproj">
       <Project>{92AE819B-4938-4502-AC32-67063F9893CD}</Project>
-      <Name>UAViewerControls</Name>
+      <Name>Viewe.VieweControls</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
