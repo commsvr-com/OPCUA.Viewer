@@ -11,6 +11,9 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LicensesContainer", "..\PR39-CommonResources\LicensesContainer\LicensesContainer.csproj", "{234A138E-4E17-4F12-84A3-A920DDAE0D86}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_Solution Items", "_Solution Items", "{DBC6DFC7-F187-446D-BFB3-49A4EAF2DAB9}"
+	ProjectSection(SolutionItems) = preProject
+		Viewer.Scripts\SignInstall.cmd = Viewer.Scripts\SignInstall.cmd
+	EndProjectSection
 EndProject
 Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Viewer.Setup", "Viewer.Setup\Viewer.Setup.vdproj", "{924C2348-0ABD-453D-BE47-4C24B6D8A96C}"
 EndProject
