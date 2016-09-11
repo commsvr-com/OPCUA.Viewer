@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -9,7 +9,7 @@
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>CAS.OPC.UA.Viewer.Sample</RootNamespace>
-    <AssemblyName>CAS.CommServer.UA.Viewe.VieweControls</AssemblyName>
+    <AssemblyName>CAS.CommServer.UA.Viewer.ViewerControls</AssemblyName>
     <SignAssembly>false</SignAssembly>
     <AssemblyOriginatorKeyFile>OPC Key Pair.snk</AssemblyOriginatorKeyFile>
     <FileUpgradeFlags>
@@ -103,9 +103,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="..\Client\Properties\AssemblyVersionInfo.cs">
-      <Link>Properties\AssemblyVersionInfo.cs</Link>
-    </Compile>
     <Compile Include="Common\ArgumentListCtrl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -135,6 +132,11 @@
     </Compile>
     <Compile Include="Common\SimpleValueEditDlg.Designer.cs">
       <DependentUpon>SimpleValueEditDlg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AssemblyInfo.tt</DependentUpon>
     </Compile>
     <Compile Include="Sessions\BrowseListCtrl.cs">
       <SubType>UserControl</SubType>
@@ -477,7 +479,7 @@
     <Compile Include="Common\GuiUtils2.Designer.cs">
       <DependentUpon>GuiUtils2.cs</DependentUpon>
     </Compile>
-    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
     <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
   </ItemGroup>
   <ItemGroup>
@@ -763,6 +765,10 @@
     <Content Include="Images\Variable.bmp" />
     <Content Include="Images\VariableType.bmp" />
     <Content Include="Images\View.bmp" />
+    <Content Include="Properties\AssemblyInfo.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>AssemblyInfo.cs</LastGenOutput>
+    </Content>
     <None Include="packages.config" />
     <None Include="Resources\Przegl_48.png" />
     <None Include="Resources\operacja_48.png" />
