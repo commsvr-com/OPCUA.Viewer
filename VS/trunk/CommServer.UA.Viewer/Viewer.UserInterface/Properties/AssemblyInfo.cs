@@ -1,49 +1,32 @@
-//<summary>
-//  Title   : Assemblyinfo
-//  System  : Microsoft Visual C# .NET 2008
+﻿//_______________________________________________________________
+//  Title   :  Assembly info for: CAS.CommServer.UA.Viewer.UserInterface
+//  System  : Microsoft VisualStudio 2015 / C#
 //  $LastChangedDate$
 //  $Rev$
 //  $LastChangedBy$
 //  $URL$
 //  $Id$
 //
-//  Copyright (C)2009, CAS LODZ POLAND.
-//  TEL: +48 (42) 686 25 47
-//  mailto://techsupp@cas.eu
-//  http://www.cas.eu
-//</summary>
-      
+//  Copyright (c) 2000-2016 CAS LODZ POLAND
+//  +48 (42) 686 25 47
+//  techsupp@cas.eu
+//  www.cas.eu
+//_______________________________________________________________
+
 using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
-using CAS;
 
-// General Information about an assembly is controlled through the following 
-// set of attributes. Change these attribute values to modify the information
-// associated with an assembly.
-[assembly: AssemblyTitle( "CAS.OPC.UA.Viewer" )]
-[assembly: AssemblyDescription("OPC UA Viewer")]
+[assembly: AssemblyTitle("CAS.CommServer.UA.Viewer.UserInterface")]
+[assembly: AssemblyDescription("CAS OPC UA Viewer User Interface")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("CAS")]
-[assembly: AssemblyProduct("OPC UA Viewer")]
-[assembly: AssemblyCopyright(AssemblyVersionInfo.Copyright)]
-[assembly: AssemblyTrademark("")]
+[assembly: AssemblyProduct("CAS CommServer Family")]
+[assembly: AssemblyCopyright("Copyright (c) 2000-2016 CAS LODZ POLAND")]
+[assembly: AssemblyTrademark("CommServer")]
 [assembly: AssemblyCulture("")]
-
-// Setting ComVisible to false makes the types in this assembly not visible 
-// to COM components.  If you need to access a type in this assembly from 
-// COM, set the ComVisible attribute to true on that type.
-[assembly: ComVisible(false)]
-
-// The following GUID is for the ID of the typelib if this project is exposed to COM
 [assembly: Guid("24061654-28ca-47e7-8d93-54893af991c9")]
+[assembly: ComVisible(false)]
+[assembly: AssemblyVersion("1.00.12.*")]
+[assembly: AssemblyFileVersion("1.00.12")]
 
-// Version information for an assembly consists of the following four values:
-//
-//      Major Version
-//      Minor Version 
-//      Build Number
-//      Revision
-//
-[assembly: AssemblyVersion(AssemblyVersionInfo.CurrentVersion)]
-[assembly: AssemblyFileVersion(AssemblyVersionInfo.CurrentFileVersion)]
