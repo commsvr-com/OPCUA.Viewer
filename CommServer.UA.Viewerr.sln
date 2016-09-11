@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Viewer.ClientControls", "Common\Controls\Viewer.ClientControls.csproj", "{A247D2EE-14FC-463D-A9BA-6CFF1EF22B7A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Viewer.ClientControls", "Viewer.ClientControls\Viewer.ClientControls.csproj", "{A247D2EE-14FC-463D-A9BA-6CFF1EF22B7A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Viewer.UserInterface", "OPCUAViewer\Client\Viewer.UserInterface.csproj", "{D7601329-530D-4537-B9B9-D9D53D5F81F6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Viewer.UserInterface", "Viewer.UserInterface\Viewer.UserInterface.csproj", "{D7601329-530D-4537-B9B9-D9D53D5F81F6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Viewe.VieweControls", "OPCUAViewer\Viewe.VieweControls\Viewe.VieweControls.csproj", "{92AE819B-4938-4502-AC32-67063F9893CD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Viewe.VieweControls", "Viewe.VieweControls\Viewe.VieweControls.csproj", "{92AE819B-4938-4502-AC32-67063F9893CD}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LicensesContainer", "..\PR39-CommonResources\LicensesContainer\LicensesContainer.csproj", "{234A138E-4E17-4F12-84A3-A920DDAE0D86}"
 EndProject
