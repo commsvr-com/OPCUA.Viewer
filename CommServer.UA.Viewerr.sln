@@ -7,13 +7,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Viewer.ClientControls", "Co
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Viewer.UserInterface", "OPCUAViewer\Client\Viewer.UserInterface.csproj", "{D7601329-530D-4537-B9B9-D9D53D5F81F6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Viewe.VieweControls", "OPCUAViewer\Controls\Viewe.VieweControls.csproj", "{92AE819B-4938-4502-AC32-67063F9893CD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Viewe.VieweControls", "OPCUAViewer\Viewe.VieweControls\Viewe.VieweControls.csproj", "{92AE819B-4938-4502-AC32-67063F9893CD}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LicensesContainer", "..\PR39-CommonResources\LicensesContainer\LicensesContainer.csproj", "{234A138E-4E17-4F12-84A3-A920DDAE0D86}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_Solution Items", "_Solution Items", "{DBC6DFC7-F187-446D-BFB3-49A4EAF2DAB9}"
 EndProject
-Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Viewer.Setup", "OpcUaViewerSetup\Viewer.Setup.vdproj", "{924C2348-0ABD-453D-BE47-4C24B6D8A96C}"
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Viewer.Setup", "Viewer.Setup\Viewer.Setup.vdproj", "{924C2348-0ABD-453D-BE47-4C24B6D8A96C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
