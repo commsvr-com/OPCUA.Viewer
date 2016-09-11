@@ -769,9 +769,9 @@
     <None Include="Resources\support.bmp" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Common\Controls\UAClientControls.csproj">
+    <ProjectReference Include="..\..\Common\Controls\Viewer.ClientControls.csproj">
       <Project>{A247D2EE-14FC-463D-A9BA-6CFF1EF22B7A}</Project>
-      <Name>UAClientControls</Name>
+      <Name>Viewer.ClientControls</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
