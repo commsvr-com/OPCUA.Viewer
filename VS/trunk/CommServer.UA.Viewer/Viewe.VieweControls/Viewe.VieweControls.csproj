@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -58,39 +58,39 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="CAS.CodeProtect, Version=5.0.2.39087, Culture=neutral, PublicKeyToken=8832ff1a67ea61a3, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\CAS.CodeProtect.5.0.2\lib\net35\CAS.CodeProtect.dll</HintPath>
+      <HintPath>..\packages\CAS.CodeProtect.5.0.2\lib\net35\CAS.CodeProtect.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="CAS.RTLib, Version=5.0.2.39089, Culture=neutral, PublicKeyToken=8832ff1a67ea61a3, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\CAS.RealTime.5.0.2\lib\net35\CAS.RTLib.dll</HintPath>
+      <HintPath>..\packages\CAS.RealTime.5.0.2\lib\net35\CAS.RTLib.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="CAS.RTLibComm, Version=5.0.2.39088, Culture=neutral, PublicKeyToken=8832ff1a67ea61a3, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\CAS.RealTime.5.0.2\lib\net35\CAS.RTLibComm.dll</HintPath>
+      <HintPath>..\packages\CAS.RealTime.5.0.2\lib\net35\CAS.RTLibComm.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="CAS.Windows.Forms, Version=5.0.6.33053, Culture=neutral, PublicKeyToken=8832ff1a67ea61a3, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\CAS.Windows.Forms.5.0.6-Charlie\lib\net451\CAS.Windows.Forms.dll</HintPath>
+      <HintPath>..\packages\CAS.Windows.Forms.5.0.6-Charlie\lib\net451\CAS.Windows.Forms.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Interop.NetFwTypeLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=22186a540fc0b044, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Opc.Ua.Configuration.1.01.3262-Bravo\lib\net451\Interop.NetFwTypeLib.dll</HintPath>
+      <HintPath>..\packages\Opc.Ua.Configuration.1.01.3262-Bravo\lib\net451\Interop.NetFwTypeLib.dll</HintPath>
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>
     <Reference Include="Opc.Ua.Client, Version=1.1.3262.36330, Culture=neutral, PublicKeyToken=8832ff1a67ea61a3, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Opc.Ua.Client.1.01.3262-Bravo\lib\net451\Opc.Ua.Client.dll</HintPath>
+      <HintPath>..\packages\Opc.Ua.Client.1.01.3262-Bravo\lib\net451\Opc.Ua.Client.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Opc.Ua.Configuration, Version=1.1.326.0, Culture=neutral, PublicKeyToken=8832ff1a67ea61a3, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Opc.Ua.Configuration.1.01.3262-Bravo\lib\net451\Opc.Ua.Configuration.dll</HintPath>
+      <HintPath>..\packages\Opc.Ua.Configuration.1.01.3262-Bravo\lib\net451\Opc.Ua.Configuration.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Opc.Ua.Core, Version=1.1.326.0, Culture=neutral, PublicKeyToken=78aea80f6827b5ab, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\OPC.UA.SDK.Core.1.01.326\lib\net35\Opc.Ua.Core.dll</HintPath>
+      <HintPath>..\packages\OPC.UA.SDK.Core.1.01.326\lib\net35\Opc.Ua.Core.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Opc.Ua.Server, Version=1.1.3262.38349, Culture=neutral, PublicKeyToken=8832ff1a67ea61a3, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Opc.Ua.Server.1.01.3262-Alpha\lib\net451\Opc.Ua.Server.dll</HintPath>
+      <HintPath>..\packages\Opc.Ua.Server.1.01.3262-Alpha\lib\net451\Opc.Ua.Server.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
@@ -769,7 +769,7 @@
     <None Include="Resources\support.bmp" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Common\Controls\Viewer.ClientControls.csproj">
+    <ProjectReference Include="..\Viewer.ClientControls\Viewer.ClientControls.csproj">
       <Project>{A247D2EE-14FC-463D-A9BA-6CFF1EF22B7A}</Project>
       <Name>Viewer.ClientControls</Name>
     </ProjectReference>
