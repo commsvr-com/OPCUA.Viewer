@@ -145,16 +145,14 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="App.config">
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
+    <None Include="App.config" />
     <EmbeddedResource Include="InstallConfig.xml" />
-    <None Include="CAS.CommServer.UA.Viewer.UserInterface.Config.xml">
+    <Content Include="CAS.CommServer.UA.Viewer.UserInterface.Config.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="CAS.CommServer.UA.Viewer.UserInterface.Endpoints.xml">
+    </Content>
+    <Content Include="CAS.CommServer.UA.Viewer.UserInterface.Endpoints.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
+    </Content>
     <None Include="packages.config" />
     <None Include="Properties\app.manifest" />
     <None Include="Properties\Settings.settings">
@@ -215,16 +213,15 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <None Include="CAS.OPC.UA.Viewer.exe.config" />
     <None Include="OPC Key Pair.snk" />
     <None Include="UABookOnline.URL" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="InternetLinks.txt" />
-    <Content Include="Properties\AssemblyInfo.tt">
+    <None Include="InternetLinks.txt" />
+    <None Include="Properties\AssemblyInfo.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>AssemblyInfo.cs</LastGenOutput>
-    </Content>
+    </None>
     <None Include="opcuaviewer_48.ico" />
     <Content Include="OPCUAVSampleSubscriptions.uases" />
   </ItemGroup>
