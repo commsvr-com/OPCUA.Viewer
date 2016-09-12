@@ -13,7 +13,7 @@
 //  http://www.cas.eu
 //</summary>
 
-namespace CAS.OPC.UA.Viewer.Client
+namespace CAS.CommServer.UA.Viewer.UserInterface
 {
     partial class OpcUaClientForm
     {

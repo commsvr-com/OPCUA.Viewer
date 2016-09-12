@@ -8,11 +8,10 @@
     <ProjectGuid>{D7601329-530D-4537-B9B9-D9D53D5F81F6}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>CAS.OPC.UA.Viewer</RootNamespace>
+    <RootNamespace>CAS.CommServer.UA.Viewer.UserInterface</RootNamespace>
     <AssemblyName>CAS.CommServer.UA.Viewer.UserInterface</AssemblyName>
     <ApplicationIcon>opcuaviewer_48.ico</ApplicationIcon>
-    <StartupObject>
-    </StartupObject>
+    <StartupObject>CAS.CommServer.UA.Viewer.UserInterface.Program</StartupObject>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
     <OldToolsVersion>3.5</OldToolsVersion>
@@ -145,13 +144,16 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
     <EmbeddedResource Include="InstallConfig.xml" />
     <Content Include="CAS.CommServer.UA.Viewer.UserInterface.Config.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="CAS.CommServer.UA.Viewer.UserInterface.Endpoints.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
     </Content>
     <None Include="packages.config" />
     <None Include="Properties\app.manifest" />

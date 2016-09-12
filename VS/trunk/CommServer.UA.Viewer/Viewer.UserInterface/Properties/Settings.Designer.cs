@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace CAS.OPC.UA.Viewer.Properties {
+namespace CAS.CommServer.UA.Viewer.UserInterface.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
@@ -20,6 +20,24 @@ namespace CAS.OPC.UA.Viewer.Properties {
         public static Settings Default {
             get {
                 return defaultInstance;
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("CAS.OPC.UA.Viewer")]
+        public string ConfigurationSectionName {
+            get {
+                return ((string)(this["ConfigurationSectionName"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("CommServer OPC UA Viewer")]
+        public string ApplicationName {
+            get {
+                return ((string)(this["ApplicationName"]));
             }
         }
     }
