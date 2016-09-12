@@ -18,10 +18,9 @@
 using System.ComponentModel;
 using System.Configuration.Install;
 using System.IO;
-using CAS.Lib.CodeProtect.EnvironmentAccess;
 using System.Reflection;
 
-namespace CAS.Lib.CodeProtect
+namespace CAS.CommServer.UA.Viewer.UserInterface
 {
   /// <summary>
   /// Provides the foundation for custom installations.
