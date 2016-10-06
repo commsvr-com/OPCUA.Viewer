@@ -29,6 +29,7 @@ using System.Diagnostics;
 using CAS.Lib.CodeProtect.Controls;
 using System.Resources;
 using System.IO;
+using CAS.Lib.CodeProtect;
 
 namespace CAS.OPC.UA.Viewer.Controls
 {
@@ -657,20 +658,24 @@ namespace CAS.OPC.UA.Viewer.Controls
 
         private void openLogsContainingFolderToolStripMenuItem_Click( object sender, EventArgs e )
         {
-          FileInfo fi = new FileInfo( CAS.Lib.CodeProtect.InstallContextNames.ApplicationDataPath );
-          string path =  fi.Directory.Parent.FullName + "\\Logs";
+          FileInfo fi = new FileInfo( InstallContextNames.ApplicationDataPath );
+          string path = Path.Combine( fi.Directory.Parent.FullName, "Logs");
           try
           {
             using ( Process process = Process.Start( @path ) ) { }
           }
-          catch ( Win32Exception ex )
+          catch ( Win32Exception _Win32Exception)
           {
-            MessageBox.Show( "No Log folder exists under this link: " + path + " You can create this folder yourself.", "No Log folder !", MessageBoxButtons.OK, MessageBoxIcon.Error );
+            MessageBox.Show( 
+              $"An error {_Win32Exception} during opening a log folder occurred; no Log folder exists under this link: { path } You can create this folder yourself.", 
+              "No Log folder !", 
+              MessageBoxButtons.OK, 
+              MessageBoxIcon.Error );
             return;
           }
-          catch ( Exception excpt )
+          catch ( Exception exception)
           {
-            MessageBox.Show( "An error during opening a log folder occures and the log folder cannot be open", "Problem with log folder !", MessageBoxButtons.OK, MessageBoxIcon.Error );
+            MessageBox.Show( $"An error {exception} during opening a log folder occurred and the log folder cannot be open", "Problem with log folder !", MessageBoxButtons.OK, MessageBoxIcon.Error );
             return;
           }
         }
