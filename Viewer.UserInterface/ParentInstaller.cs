@@ -15,34 +15,31 @@
 //  http://www.cas.eu
 //</summary>
 
+using CAS.Lib.CodeProtect;
 using System.ComponentModel;
 using System.Configuration.Install;
 using System.IO;
 using System.Reflection;
+using System.Windows.Forms;
 
 namespace CAS.CommServer.UA.Viewer.UserInterface
 {
   /// <summary>
   /// Provides the foundation for custom installations.
   /// </summary>
-  [RunInstaller( true )]
-  public partial class ParentInstaller: Installer
+  [RunInstaller(true)]
+  public partial class ParentInstaller : Installer
   {
     /// <summary>
     /// Initializes a new instance of the <see cref="ParentInstaller"/> class.
     /// </summary>
     public ParentInstaller()
     {
-      this.Installers.Add( new CAS.Lib.CodeProtect.LibInstaller() );
+      Installers.Add(new LibInstaller());
 #if DEBUG
-      Directory.SetCurrentDirectory( Path.GetDirectoryName( Assembly.GetExecutingAssembly().Location ) );
-      if ( System.Windows.Forms.MessageBox.Show
-        (
-        "To debug attach to the process. Cancel to abort installation",
-        "Main form installer", System.Windows.Forms.MessageBoxButtons.OKCancel
-        ) != System.Windows.Forms.DialogResult.OK
-        )
-        throw new InstallException( "Installation aborted by used" );
+      Directory.SetCurrentDirectory(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location));
+      if (MessageBox.Show("To debug attach to the process. Cancel to abort installation", "Main form installer", MessageBoxButtons.OKCancel) != DialogResult.OK)
+        throw new InstallException("Installation aborted by used");
 #endif
     }
   }

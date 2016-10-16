@@ -43,6 +43,7 @@
     <ApplicationRevision>2</ApplicationRevision>
     <ApplicationVersion>1.0.14.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
     <PublishWizardCompleted>true</PublishWizardCompleted>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
@@ -107,6 +108,10 @@
   <ItemGroup>
     <Reference Include="CAS.CodeProtect, Version=6.0.0.28328, Culture=neutral, PublicKeyToken=8832ff1a67ea61a3, processorArchitecture=MSIL">
       <HintPath>..\packages\CAS.CodeProtect.6.0.0-Charlie\lib\net451\CAS.CodeProtect.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CAS.CommonResources, Version=2.0.2.16456, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\CAS.Licenses.Container.2.00.02\lib\net451\CAS.CommonResources.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Interop.NetFwTypeLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=22186a540fc0b044, processorArchitecture=MSIL">
@@ -177,7 +182,9 @@
     <None Include="App.config">
       <SubType>Designer</SubType>
     </None>
-    <EmbeddedResource Include="InstallConfig.xml" />
+    <EmbeddedResource Include="InstallConfig.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <Content Include="CAS.CommServer.UA.Viewer.UserInterface.Config.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -210,6 +217,11 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.1 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
     <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
       <Visible>False</Visible>
       <ProductName>Microsoft .NET Framework 4.6.1 %28x86 and x64%29</ProductName>
