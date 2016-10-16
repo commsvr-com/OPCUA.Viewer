@@ -73,6 +73,7 @@
     <Compile Include="ProgramUnitTest.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="app.config" />
     <None Include="CAS.License.lic">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

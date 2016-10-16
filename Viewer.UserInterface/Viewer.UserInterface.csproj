@@ -105,13 +105,25 @@
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="CAS.CodeProtect, Version=5.0.2.39087, Culture=neutral, PublicKeyToken=8832ff1a67ea61a3, processorArchitecture=MSIL">
-      <HintPath>..\packages\CAS.CodeProtect.5.0.2\lib\net35\CAS.CodeProtect.dll</HintPath>
+    <Reference Include="CAS.CodeProtect, Version=6.0.0.28328, Culture=neutral, PublicKeyToken=8832ff1a67ea61a3, processorArchitecture=MSIL">
+      <HintPath>..\packages\CAS.CodeProtect.6.0.0-Charlie\lib\net451\CAS.CodeProtect.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Interop.NetFwTypeLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=22186a540fc0b044, processorArchitecture=MSIL">
       <HintPath>..\packages\Opc.Ua.Configuration.1.01.3262-Bravo\lib\net451\Interop.NetFwTypeLib.dll</HintPath>
       <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Build.Framework, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\CAS.CodeProtect.6.0.0-Charlie\lib\net451\Microsoft.Build.Framework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Build.Tasks.Core, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\CAS.CodeProtect.6.0.0-Charlie\lib\net451\Microsoft.Build.Tasks.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Build.Utilities.Core, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\CAS.CodeProtect.6.0.0-Charlie\lib\net451\Microsoft.Build.Utilities.Core.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="Opc.Ua.Configuration, Version=1.1.326.0, Culture=neutral, PublicKeyToken=8832ff1a67ea61a3, processorArchitecture=MSIL">
       <HintPath>..\packages\Opc.Ua.Configuration.1.01.3262-Bravo\lib\net451\Opc.Ua.Configuration.dll</HintPath>
@@ -130,8 +142,6 @@
     <Reference Include="System.IdentityModel">
       <RequiredTargetFramework>3.0</RequiredTargetFramework>
     </Reference>
-    <Reference Include="System.Runtime.Serialization, Version=3.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL" />
-    <Reference Include="System.ServiceModel, Version=3.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
   </ItemGroup>
