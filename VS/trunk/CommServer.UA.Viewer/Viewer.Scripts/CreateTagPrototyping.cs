@@ -1,7 +1,7 @@
 ﻿
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace CASCommServer.UA.Stack.Core.Scripts
+namespace CAS.CommServer.UA.Viewer.Scripts
 {
 
   [TestClass]
@@ -16,13 +16,13 @@ namespace CASCommServer.UA.Stack.Core.Scripts
       #region Copy to script
       string _rel = _version.Replace(".", "_"); // _version must be replaced by the correct version variable depending on the project.
       string _repositoryUrl = @"svn://svnserver.hq.cas.com.pl/VS/";
-      string _solutionPath = @"/CommServer.UA.Stack.Core";
+      string _solutionPath = @"/CommServer.UA.Viewer";
       string _trunkPath = $@"{_repositoryUrl}trunk{_solutionPath}/";
       string _tagPath = $@"{_repositoryUrl}tags{_solutionPath}.rel_{_rel}";
       #endregion
 
-      Assert.AreEqual("svn://svnserver.hq.cas.com.pl/VS/trunk/CommServer.UA.Stack.Core/", _trunkPath);
-      Assert.AreEqual("svn://svnserver.hq.cas.com.pl/VS/tags/CommServer.UA.Stack.Core.rel_2_01_1061", _tagPath);
+      Assert.AreEqual("svn://svnserver.hq.cas.com.pl/VS/trunk/CommServer.UA.Viewer/", _trunkPath);
+      Assert.AreEqual("svn://svnserver.hq.cas.com.pl/VS/tags/CommServer.UA.Viewer.rel_2_01_1061", _tagPath);
 
     }
   }

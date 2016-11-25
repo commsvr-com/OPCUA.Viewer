@@ -28,10 +28,10 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyCulture("")]
 [assembly: Guid("3CCC345D-BCBF-457C-A380-550CA278F75C")]
 [assembly: ComVisible(false)]
-[assembly: AssemblyVersion("<#= OPCUASDKVersion #>.*")]
-[assembly: AssemblyFileVersion("<#= OPCUASDKVersion #>")]
+[assembly: AssemblyVersion("<#= CASCommServerUAViewerVersion #>.*")]
+[assembly: AssemblyFileVersion("<#= CASCommServerUAViewerVersion #>")]
 
-<#@ include file = "..\..\PR39-CommonResources\T4Definitions\OPC.t4" #>
+<#@ include file = "..\..\..\PR39-CommonResources\T4Definitions\CAS.OPC.t4" #>
 <#+
-string m_AssemblyTitle = "CAS.CommServer.UA.Stack.Core";
+string m_AssemblyTitle = "CAS.CommServer.UA.Viewer.Scripts";
 #>
