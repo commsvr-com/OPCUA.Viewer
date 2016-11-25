@@ -1,5 +1,5 @@
 ﻿//_______________________________________________________________
-//  Title   :  Assembly info for: CAS.CommServer.UA.Stack.Core
+//  Title   :  Assembly info for: CAS.CommServer.UA.Viewer.Scripts
 //  System  : Microsoft VisualStudio 2015 / C#
 //  $LastChangedDate:  $
 //  $Rev:  $
@@ -10,14 +10,14 @@
 //  Copyright (c) 2000-2016 CAS LODZ POLAND
 //  +48 (42) 686 25 47
 //  techsupp@cas.eu
-//  www.commsvr.eu
+//  www.cas.eu
 //_______________________________________________________________
 
 using System.Reflection;
 using System.Runtime.InteropServices;
 
-[assembly: AssemblyTitle("CAS.CommServer.UA.Stack.Core")]
-[assembly: AssemblyDescription("Scripts Prototyping Workspace for CAS.CommServer.UA.Stack.Core")]
+[assembly: AssemblyTitle("CAS.CommServer.UA.Viewer.Scripts")]
+[assembly: AssemblyDescription("Scripts Prototyping Workspace for CAS.CommServer.UA.Viewer.Scripts")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("CAS")]
 [assembly: AssemblyProduct("CAS CommServer Family")]
@@ -26,6 +26,6 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyCulture("")]
 [assembly: Guid("3CCC345D-BCBF-457C-A380-550CA278F75C")]
 [assembly: ComVisible(false)]
-[assembly: AssemblyVersion("1.01.3263.*")]
-[assembly: AssemblyFileVersion("1.01.3263")]
+[assembly: AssemblyVersion("1.00.14.*")]
+[assembly: AssemblyFileVersion("1.00.14")]
 

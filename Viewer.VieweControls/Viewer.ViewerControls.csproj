@@ -799,7 +799,9 @@
       <LastGenOutput>AssemblyInfo.cs</LastGenOutput>
     </Content>
     <None Include="cas.snk" />
-    <None Include="packages.config" />
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Resources\Przegl_48.png" />
     <None Include="Resources\operacja_48.png" />
     <None Include="Resources\support.bmp" />
