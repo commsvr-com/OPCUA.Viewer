@@ -13,7 +13,6 @@
 //  http://www.cas.eu
 //</summary>
 
-using CAS.Lib.CodeProtect;
 using CAS.Lib.ControlLibrary;
 using CAS.OPC.UA.Viewer.Client.Controls;
 using CAS.OPC.UA.Viewer.Sample.Properties;
@@ -26,7 +25,6 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Diagnostics;
 using System.Drawing;
-using System.IO;
 using System.Reflection;
 using System.Resources;
 using System.Windows.Forms;
@@ -46,6 +44,7 @@ namespace CAS.OPC.UA.Viewer.Controls
     private List<ClientForm> m_forms;
     private BaseTreeCtrl m_btcSession;
     private BaseTreeCtrl m_btcBrowse;
+    private string m_logFileFolderPath;
     #endregion
 
     public ClientForm()
@@ -57,11 +56,16 @@ namespace CAS.OPC.UA.Viewer.Controls
         ServiceMessageContext context,
         ApplicationInstance application,
         ClientForm masterForm,
-        ApplicationConfiguration configuration)
+        ApplicationConfiguration configuration,
+        string logFileFolderPath
+      )
     {
       InitializeComponent();
       if (maintenanceControlComponent.Warning != null)
         Utils.Trace("The following warning(s) appeared during loading the license: " + maintenanceControlComponent.Warning);
+      if (String.IsNullOrEmpty(logFileFolderPath))
+        throw new ArgumentNullException(nameof(logFileFolderPath));
+      m_logFileFolderPath = logFileFolderPath;
       m_masterForm = masterForm;
       m_context = context;
       m_application = application;
@@ -275,7 +279,7 @@ namespace CAS.OPC.UA.Viewer.Controls
     {
       if (m_masterForm == null)
       {
-        ClientForm form = new ClientForm(m_context, m_application, this, m_configuration);
+        ClientForm form = new ClientForm(m_context, m_application, this, m_configuration, m_logFileFolderPath);
         m_forms.Add(form);
         form.FormClosing += new FormClosingEventHandler(Window_FormClosing);
         form.Show();
@@ -655,16 +659,14 @@ namespace CAS.OPC.UA.Viewer.Controls
 
     private void openLogsContainingFolderToolStripMenuItem_Click(object sender, EventArgs e)
     {
-      FileInfo fi = new FileInfo(InstallContextNames.ApplicationDataPath);
-      string path = Path.Combine(fi.Directory.Parent.FullName, "Logs");
       try
       {
-        using (Process process = Process.Start(@path)) { }
+        using (Process process = Process.Start(@m_logFileFolderPath)) { }
       }
       catch (Win32Exception _Win32Exception)
       {
         MessageBox.Show(
-          $"An error {_Win32Exception} during opening a log folder occurred; no Log folder exists under this link: { path } You can create this folder yourself.",
+          $"An error {_Win32Exception} during opening a log folder occurred; no Log folder exists under this link: { @m_logFileFolderPath} You can create this folder yourself.",
           "No Log folder !",
           MessageBoxButtons.OK,
           MessageBoxIcon.Error);

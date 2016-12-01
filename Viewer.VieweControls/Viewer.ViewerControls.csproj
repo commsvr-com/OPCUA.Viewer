@@ -79,12 +79,20 @@
       <HintPath>..\packages\CAS.CodeProtect.6.1.3\lib\net451\CAS.CodeProtect.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="CAS.CommServer.UA.Stack.Client, Version=1.1.3263.42035, Culture=neutral, PublicKeyToken=8832ff1a67ea61a3, processorArchitecture=MSIL">
-      <HintPath>..\packages\CAS.CommServer.UA.Stack.Client.1.01.3263\lib\net451\CAS.CommServer.UA.Stack.Client.dll</HintPath>
+    <Reference Include="CAS.CommServer.UA.Stack.Client, Version=1.1.3265.30402, Culture=neutral, PublicKeyToken=8832ff1a67ea61a3, processorArchitecture=MSIL">
+      <HintPath>..\packages\CAS.CommServer.UA.Stack.Client.1.01.3265\lib\net451\CAS.CommServer.UA.Stack.Client.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="CAS.CommServer.UA.Stack.Server, Version=1.1.3263.39140, Culture=neutral, PublicKeyToken=8832ff1a67ea61a3, processorArchitecture=MSIL">
-      <HintPath>..\packages\CAS.CommServer.UA.Stack.Server.1.01.3263\lib\net451\CAS.CommServer.UA.Stack.Server.dll</HintPath>
+    <Reference Include="CAS.CommServer.UA.Stack.Configuration, Version=1.1.3265.31669, Culture=neutral, PublicKeyToken=8832ff1a67ea61a3, processorArchitecture=MSIL">
+      <HintPath>..\packages\CAS.CommServer.UA.Stack.Configuration.1.01.3265\lib\net451\CAS.CommServer.UA.Stack.Configuration.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CAS.CommServer.UA.Stack.Core, Version=1.1.3265.40471, Culture=neutral, PublicKeyToken=8832ff1a67ea61a3, processorArchitecture=MSIL">
+      <HintPath>..\packages\CAS.CommServer.UA.Stack.Core.1.01.3265\lib\net451\CAS.CommServer.UA.Stack.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CAS.CommServer.UA.Stack.Server, Version=1.1.3265.32328, Culture=neutral, PublicKeyToken=8832ff1a67ea61a3, processorArchitecture=MSIL">
+      <HintPath>..\packages\CAS.CommServer.UA.Stack.Server.1.01.3265\lib\net451\CAS.CommServer.UA.Stack.Server.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="CAS.RealTime, Version=5.0.6.23644, Culture=neutral, PublicKeyToken=8832ff1a67ea61a3, processorArchitecture=MSIL">
@@ -97,14 +105,6 @@
     </Reference>
     <Reference Include="CAS.Windows.Forms, Version=6.1.2.24319, Culture=neutral, PublicKeyToken=8832ff1a67ea61a3, processorArchitecture=MSIL">
       <HintPath>..\packages\CAS.Windows.Forms.6.1.2\lib\net451\CAS.Windows.Forms.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="CommServer.UA.Stack.Configuration, Version=1.1.3263.30991, Culture=neutral, PublicKeyToken=8832ff1a67ea61a3, processorArchitecture=MSIL">
-      <HintPath>..\packages\CAS.CommServer.UA.Stack.Configuration.1.01.3263\lib\net451\CommServer.UA.Stack.Configuration.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="CommServer.UA.Stack.Core, Version=1.1.3263.22572, Culture=neutral, PublicKeyToken=8832ff1a67ea61a3, processorArchitecture=MSIL">
-      <HintPath>..\packages\CAS.CommServer.UA.Stack.Core.1.01.3263\lib\net451\CommServer.UA.Stack.Core.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.Build.Framework, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
