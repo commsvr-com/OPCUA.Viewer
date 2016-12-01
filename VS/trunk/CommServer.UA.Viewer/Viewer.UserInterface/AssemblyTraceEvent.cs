@@ -19,7 +19,7 @@ using System;
 using System.Diagnostics;
 using System.Reflection;
 
-namespace CAS.OPCViewer
+namespace CAS.CommServer.UA.Viewer.UserInterface
 {
   /// <summary>
   /// Singleton implementation of the <see cref="TraceSource"/>.

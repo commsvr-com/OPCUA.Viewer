@@ -33,7 +33,8 @@ namespace CAS.CommServer.UA.Viewer.UserInterface
     {
       InitializeComponent();
     }
-    public OpcUaClientForm(ApplicationInstance application, ClientForm masterForm, ApplicationConfiguration configuration) : base(configuration.CreateMessageContext(), application, masterForm, configuration)
+    public OpcUaClientForm(ApplicationInstance application, ClientForm masterForm, ApplicationConfiguration configuration) : 
+      base(configuration.CreateMessageContext(), application, masterForm, configuration, ApplicationSettings.LogFileFolderPath)
     {
       InitializeComponent();
       base.BrowseCTRL.MethodCalled += new MethodCalledEventHandler(BrowseCTRL_MethodCalled);

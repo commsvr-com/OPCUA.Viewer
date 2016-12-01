@@ -115,12 +115,12 @@
       <HintPath>..\packages\CAS.Licenses.Container.2.00.06\lib\net451\CAS.CommonResources.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="CommServer.UA.Stack.Configuration, Version=1.1.3263.30991, Culture=neutral, PublicKeyToken=8832ff1a67ea61a3, processorArchitecture=MSIL">
-      <HintPath>..\packages\CAS.CommServer.UA.Stack.Configuration.1.01.3263\lib\net451\CommServer.UA.Stack.Configuration.dll</HintPath>
+    <Reference Include="CAS.CommServer.UA.Stack.Configuration, Version=1.1.3265.31669, Culture=neutral, PublicKeyToken=8832ff1a67ea61a3, processorArchitecture=MSIL">
+      <HintPath>..\packages\CAS.CommServer.UA.Stack.Configuration.1.01.3265\lib\net451\CAS.CommServer.UA.Stack.Configuration.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="CommServer.UA.Stack.Core, Version=1.1.3263.22572, Culture=neutral, PublicKeyToken=8832ff1a67ea61a3, processorArchitecture=MSIL">
-      <HintPath>..\packages\CAS.CommServer.UA.Stack.Core.1.01.3263\lib\net451\CommServer.UA.Stack.Core.dll</HintPath>
+    <Reference Include="CAS.CommServer.UA.Stack.Core, Version=1.1.3265.40471, Culture=neutral, PublicKeyToken=8832ff1a67ea61a3, processorArchitecture=MSIL">
+      <HintPath>..\packages\CAS.CommServer.UA.Stack.Core.1.01.3265\lib\net451\CAS.CommServer.UA.Stack.Core.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.Build.Framework, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
@@ -148,6 +148,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ApplicationSettings.cs" />
+    <Compile Include="AssemblyTraceEvent.cs" />
+    <Content Include="log\CAS.CommServer.UA.Viewer.log">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Compile Include="OpcUaClientForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -184,13 +189,16 @@
     </EmbeddedResource>
     <Content Include="CAS.CommServer.UA.Viewer.UserInterface.Config.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
     </Content>
     <Content Include="CAS.CommServer.UA.Viewer.UserInterface.Endpoints.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <SubType>Designer</SubType>
     </Content>
     <None Include="cas.snk" />
-    <None Include="packages.config" />
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Properties\app.manifest" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

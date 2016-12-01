@@ -40,5 +40,14 @@ namespace CAS.CommServer.UA.Viewer.UserInterface.Properties {
                 return ((string)(this["ApplicationName"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("log")]
+        public string RelativeLogFilePath {
+            get {
+                return ((string)(this["RelativeLogFilePath"]));
+            }
+        }
     }
 }
