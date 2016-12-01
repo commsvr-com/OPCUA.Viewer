@@ -203,8 +203,7 @@ namespace CAS.OPC.UA.Viewer.Controls
             this.toolStripSeparator1,
             this.aboutToolStripMenuItem,
             this.licenseInformationToolStripMenuItem,
-            this.openLogsContainingFolderToolStripMenuItem,
-            this.unlockSoftwareToolStripMenuItem} );
+            this.openLogsContainingFolderToolStripMenuItem} );
           this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
           this.helpToolStripMenuItem.Size = new System.Drawing.Size( 44, 20 );
           this.helpToolStripMenuItem.Text = "Help";
