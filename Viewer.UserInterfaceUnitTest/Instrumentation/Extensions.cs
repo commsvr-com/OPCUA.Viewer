@@ -3,7 +3,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Diagnostics;
 using System.Reflection;
 
-namespace CAS.CommServer.DA.Viewer.Tests.Instrumentation
+namespace CAS.CommServer.UA.Viewer.UserInterface.UnitTest.Instrumentation
 {
   internal static class Extensions
   {

@@ -1,6 +1,6 @@
 ﻿
-using CAS.CommServer.DA.Viewer.Tests.Instrumentation;
-using CAS.OPCViewer;
+using CAS.CommServer.UA.Viewer.UserInterface;
+using CAS.CommServer.UA.Viewer.UserInterface.UnitTest.Instrumentation;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using System.Collections.Generic;
@@ -32,7 +32,7 @@ namespace CAS.CommServer.DA.Viewer.Tests
       EventTypeFilter _eventTypeFilter = _advancedListener.Filter as EventTypeFilter;
       Assert.AreEqual(SourceLevels.All, _eventTypeFilter.EventType);
       string _testPath = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
-      Assert.AreEqual<string>(Path.Combine(_testPath, @"log\CAS.CommServer.DA.Viewer.log"), _advancedListener.GetFileName());
+      Assert.AreEqual<string>(Path.Combine(_testPath, @"log\CAS.CommServer.UA.Viewer.log"), _advancedListener.GetFileName());
     }
     [TestMethod]
     public void LogFileExistsTest()
@@ -45,12 +45,12 @@ namespace CAS.CommServer.DA.Viewer.Tests
       Assert.IsFalse(String.IsNullOrEmpty(_advancedListener.GetFileName()));
       FileInfo _logFileInfo = new FileInfo(_advancedListener.GetFileName());
       Assert.IsTrue(_logFileInfo.Exists);
-      Assert.AreEqual<long>(0, _logFileInfo.Length);
+      long _length = _logFileInfo.Length;
       _tracer.TraceEvent(TraceEventType.Verbose, 0, "LogFileExistsTest is executed");
       Assert.IsFalse(String.IsNullOrEmpty(_advancedListener.GetFileName()));
       _logFileInfo.Refresh();
       Assert.IsTrue(_logFileInfo.Exists);
-      Assert.IsTrue(_logFileInfo.Length > 10);
+      Assert.IsTrue(_logFileInfo.Length > _length + 10, $"The final file lenght = {_logFileInfo.Length} must be > {_length} + 10");
     }
   }
 }
