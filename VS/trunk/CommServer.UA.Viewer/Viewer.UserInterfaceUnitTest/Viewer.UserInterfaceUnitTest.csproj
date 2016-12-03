@@ -65,6 +65,8 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AssemblyTraceEventUnitTest.cs" />
+    <Compile Include="Instrumentation\Extensions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -73,11 +75,16 @@
     <Compile Include="ProgramUnitTest.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="app.config" />
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="CAS.License.lic">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="cas.snk" />
+    <Content Include="log\CAS.CommServer.UA.Viewer.log">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <None Include="packages.config" />
   </ItemGroup>
   <Choose>
