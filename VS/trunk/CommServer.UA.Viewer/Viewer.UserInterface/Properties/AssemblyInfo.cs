@@ -27,8 +27,8 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyCulture("")]
 [assembly: Guid("24061654-28ca-47e7-8d93-54893af991c9")]
 [assembly: ComVisible(false)]
-[assembly: AssemblyVersion("1.00.14.*")]
-[assembly: AssemblyFileVersion("1.00.14")]
+[assembly: AssemblyVersion("1.00.15.*")]
+[assembly: AssemblyFileVersion("1.00.15")]
 [assembly: InternalsVisibleToAttribute("CAS.CommServer.UA.Viewer.UserInterfaceUnitTest, PublicKey=0024000004800000940000000602000000240000525341310004000001000100b3cff1bec656a6" +
                                                                        "e3784c75cacce8ee3bc695d0ce135d820c86465eb49b2353f0438d28ad9a458e5350c0c141393d" +
                                                                        "d9ad606bd9f4e0a8e1b0c49fa37835630b16798ece56df81c756f4c6bd37f07d68cc91ebfa7be7" +
