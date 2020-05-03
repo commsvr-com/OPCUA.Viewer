@@ -23,16 +23,16 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyDescription("CAS OPC UA Viewer User Interface Unit Tests")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("<#=AssemblyCompany#>")]
-[assembly: AssemblyProduct("<#=DefaultProductName#>")]
+[assembly: AssemblyProduct("<#=AssemblyProduct#>")]
 [assembly: AssemblyCopyright("<#=AssemblyCopyright#>")]
-[assembly: AssemblyTrademark("<#=DefaultProductTrademark#>")]
+[assembly: AssemblyTrademark("<#=AssemblyTrademark#>")]
 [assembly: AssemblyCulture("")]
 [assembly: Guid("fd99e534-1ec3-48a4-8b0d-0f93827ea8e5")]
 [assembly: ComVisible(false)]
 [assembly: AssemblyVersion("<#= CASCommServerUAViewerVersion #>.*")]
 [assembly: AssemblyFileVersion("<#= CASCommServerUAViewerVersion #>")]
 
-<#@ include file = "..\..\..\PR39-CommonResources\T4Definitions\CAS.OPC.t4" #>
+<#@ include file = "..\..\SolutionMetadataTemplate.t4" #>
 <#+
 string m_AssemblyTitle = "CAS.CommServer.UA.Viewer.UserInterface";
 #>

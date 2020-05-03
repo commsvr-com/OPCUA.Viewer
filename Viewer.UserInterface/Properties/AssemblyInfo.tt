@@ -23,9 +23,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyDescription("CAS OPC UA Viewer User Interface")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("<#=AssemblyCompany#>")]
-[assembly: AssemblyProduct("<#=DefaultProductName#>")]
+[assembly: AssemblyProduct("<#=AssemblyProduct#>")]
 [assembly: AssemblyCopyright("<#=AssemblyCopyright#>")]
-[assembly: AssemblyTrademark("<#=DefaultProductTrademark#>")]
+[assembly: AssemblyTrademark("<#=AssemblyTrademark#>")]
 [assembly: AssemblyCulture("")]
 [assembly: Guid("24061654-28ca-47e7-8d93-54893af991c9")]
 [assembly: ComVisible(false)]
@@ -37,7 +37,7 @@ using System.Runtime.InteropServices;
                                                                        "8149d016bbc6a364beda14fc1119698d8c8d9923805b40122bf594f08cc29f41cb0a31e5e141e3" +
                                                                        "f2421b9d", AllInternalsVisible = true)]
 
-<#@ include file = "..\..\..\PR39-CommonResources\T4Definitions\CAS.OPC.t4" #>
+<#@ include file = "..\..\SolutionMetadataTemplate.t4" #>
 <#+
 string m_AssemblyTitle = "CAS.CommServer.UA.Viewer.UserInterface.UnitTest";
 #>

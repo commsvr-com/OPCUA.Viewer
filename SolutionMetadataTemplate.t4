@@ -1,0 +1,23 @@
+<#+
+//Common
+string AssemblyCopyright = "Copyright (C) 2020, Mariusz Postol LODZ POLAND.";
+string AssemblyCompany = "Mariusz Postol";
+string Url = "www.cas.eu";
+string Email = "mpostol@cas.eu";
+string Phone = "+48 (608) 619 899";
+string Owner = "Mariusz Postol";
+
+
+//CommServer
+string AssemblyProduct = "Object Oriented Internet";
+string AssemblyTrademark = "CommServer";
+
+string CASCommServerUAViewerVersion = "1.00.15";
+
+
+//Note: 
+//Alpha, Bravo, Charlie, Delta, Echo, Foxtrot, Golf, Hotel, India, Juliet, 
+//Kilo, Lima, Mike, November, Oscar, Papa, Quebec, Romeo, Sierra, Tango,
+//Uniform, Victor, Whiskey, X-Ray, Yankee, Zulu 
+
+#>

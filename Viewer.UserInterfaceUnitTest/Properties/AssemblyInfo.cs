@@ -7,9 +7,9 @@
 //  $URL:  $
 //  $Id:  $
 //
-//  Copyright (c) 2000-2016 CAS LODZ POLAND
-//  +48 (42) 686 25 47
-//  techsupp@cas.eu
+//  Copyright (C) 2020, Mariusz Postol LODZ POLAND.
+//  +48 (608) 619 899
+//  mpostol@cas.eu
 //  www.cas.eu
 //_______________________________________________________________
 
@@ -20,9 +20,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("CAS.CommServer.UA.Viewer.UserInterface")]
 [assembly: AssemblyDescription("CAS OPC UA Viewer User Interface Unit Tests")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("CAS")]
-[assembly: AssemblyProduct("CAS CommServer Family")]
-[assembly: AssemblyCopyright("Copyright (c) 2000-2016 CAS LODZ POLAND")]
+[assembly: AssemblyCompany("Mariusz Postol")]
+[assembly: AssemblyProduct("Object Oriented Internet")]
+[assembly: AssemblyCopyright("Copyright (C) 2020, Mariusz Postol LODZ POLAND.")]
 [assembly: AssemblyTrademark("CommServer")]
 [assembly: AssemblyCulture("")]
 [assembly: Guid("fd99e534-1ec3-48a4-8b0d-0f93827ea8e5")]

@@ -23,16 +23,16 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyDescription("CAS OPC UA Viewer Dedicated Controls")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("<#=AssemblyCompany#>")]
-[assembly: AssemblyProduct("<#=DefaultProductName#>")]
+[assembly: AssemblyProduct("<#=AssemblyProduct#>")]
 [assembly: AssemblyCopyright("<#=AssemblyCopyright#>")]
-[assembly: AssemblyTrademark("<#=DefaultProductTrademark#>")]
+[assembly: AssemblyTrademark("<#=AssemblyTrademark#>")]
 [assembly: AssemblyCulture("")]
 [assembly: Guid("39735a8c-b258-4633-9c76-a92f332cc1e4")]
 [assembly: ComVisible(false)]
 [assembly: AssemblyVersion("<#= CASCommServerUAViewerVersion #>.*")]
 [assembly: AssemblyFileVersion("<#= CASCommServerUAViewerVersion #>")]
 
-<#@ include file = "..\..\..\PR39-CommonResources\T4Definitions\CAS.OPC.t4" #>
+<#@ include file = "..\..\SolutionMetadataTemplate.t4" #>
 <#+
 string m_AssemblyTitle = "CAS.CommServer.UA.Viewer.ViewerControls";
 #>
