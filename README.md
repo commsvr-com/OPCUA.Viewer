@@ -33,7 +33,7 @@ Further development of CommServer software will be carried out under a broader c
 
 In the article, there is a call to action initiative. Consider joining. To get more, visit the section `How to be involved`.
 
-At the top of the repository main page, there is the `Watch` and `Star` buttons.  If you're interested in this project click on one to watch to get notifications about any activity and progress. It will be also a signal for me to increase priority for planned work related to this repository.
+At the top of the repository main page, there is the `Watch` and `Star` buttons.  If you're interested in this project click on one to get notifications about any activity and progress. It will be also a signal for me to increase priority for planned work related to this repository.
 
 ## See also
 
